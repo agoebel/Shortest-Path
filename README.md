@@ -41,6 +41,7 @@ ShortestPath: This is main class. It accepts the user input constructs the graph
 SizeComparator: This class is similar to PathDistanceComparator but instead of comparing the distance it compares the number of nodes in the path.
 
 Algorithms and methods:
+
 **Problem #1:** The program uses the standard Dijkstra's algorithm. Graph. graph.findShortestPath(source, destination) is called to find the shortest path between the source and destination nodes. For the details of the Dijkstra's algorithm please refer to http://en.wikipedia.org/wiki/Dijkstra's_algorithm.
 
 **Problem #2:** The program tries to find the paths from the source node to each of the nodes supplied in the problem statement. graph.findShortestPathByAlgorithm1(source, intermediateNodes). If it finds more than one path going through all the intermediate nodes then it takes the shortest path out of all.
