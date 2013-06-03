@@ -41,11 +41,11 @@ ShortestPath: This is main class. It accepts the user input constructs the graph
 SizeComparator: This class is similar to PathDistanceComparator but instead of comparing the distance it compares the number of nodes in the path.
 
 Algorithms and methods:
-Problem #1: The program uses the standard Dijkstra's algorithm. Graph. graph.findShortestPath(source, destination) is called to find the shortest path between the source and destination nodes. For the details of the Dijkstra's algorithm please refer to http://en.wikipedia.org/wiki/Dijkstra's_algorithm.
+**Problem #1:** The program uses the standard Dijkstra's algorithm. Graph. graph.findShortestPath(source, destination) is called to find the shortest path between the source and destination nodes. For the details of the Dijkstra's algorithm please refer to http://en.wikipedia.org/wiki/Dijkstra's_algorithm.
 
-Problem #2: The program tries to find the paths from the source node to each of the nodes supplied in the problem statement. graph.findShortestPathByAlgorithm1(source, intermediateNodes). If it finds more than one path going through all the intermediate nodes then it takes the shortest path out of all.
+**Problem #2:** The program tries to find the paths from the source node to each of the nodes supplied in the problem statement. graph.findShortestPathByAlgorithm1(source, intermediateNodes). If it finds more than one path going through all the intermediate nodes then it takes the shortest path out of all.
 
-Problem #3: The program uses 3 algorithms
+**Problem #3:** The program uses 3 algorithms
     (1) The same algorith as of problem#2 passing all the nodes except source as intermediate nodes and tries to find the shortest path.
     (2) Using Minimal Spanning Tree (graph.findShortestPathByAlgorithm2) - program creates the minimal spanning tree out of the graph and the traverses the minimum spanning tree from source node to all the nodes. For the details of Minimal Spanning Tree algorithm please refer to http://en.wikipedia.org/wiki/Kruskal's_algorithm.
     (3) Traversing all the nodes sequentially (graph.findShortestPathByAlgorithm3) - This traverses the graph in depth first manner and then merges all the paths into one path. It removes any unwanted edges which forms the cycle or any duplicate retraced paths.
